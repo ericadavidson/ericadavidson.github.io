@@ -13,6 +13,10 @@ body {
       background: light blue;
       color: white;
     }
+a
+{
+color: grey;
+}
 ul
 {
   text-align: center;
