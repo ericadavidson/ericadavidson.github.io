@@ -25,6 +25,8 @@ ul
 {
   text-align: center;
   padding: 10px;
+  background: white;
+  color: black;
 }
 li {
   display: inline; /* margin creates space on the outside of an element while padding crewates space on the inside */
