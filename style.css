@@ -13,3 +13,8 @@ body {
       background: blue;
       color: white;
     }
+ul
+{
+  text-align: center;
+  padding: 10px;
+}
