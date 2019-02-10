@@ -8,7 +8,11 @@ body {
       color: white;
       font-family: helvetica;
   }
-  input[type="submit"]
+  h1
+{
+font-size: 70px
+}
+input[type="submit"]
   {
       background: grey;
       color: white;
