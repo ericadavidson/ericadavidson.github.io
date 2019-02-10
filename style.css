@@ -32,3 +32,8 @@ li {
   display: inline; /* margin creates space on the outside of an element while padding crewates space on the inside */
   padding: 0px 10px 0px 10px; /* top right bottom left*/
 }
+  @media (max-width: 500px) {
+    li {
+      display: block;
+      padding: 5px;
+    }
