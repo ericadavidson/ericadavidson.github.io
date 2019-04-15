@@ -5,7 +5,7 @@ body {
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
       background-attachment: fixed; /* Resize the background image to cover the entire container */
-      color: white;
+      color: black;
       font-family: helvetica;
   }
   h1
@@ -28,7 +28,10 @@ ul
   padding: 10px;
   background: rgba(225, 225, 225, 0.5);
   color: black;
-  margin: 0 auto;
+  margin-top:25;
+margin-bottom:0;
+margin-left:auto;
+margin-right:auto;
 }
 li {
   display: inline; /* margin creates space on the outside of an element while padding creates space on the inside */
