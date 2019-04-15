@@ -28,7 +28,10 @@ ul
   padding: 10px;
   background: rgba(225, 225, 225, 0.5);
   color: black;
-  margin: 50px 0px 0px 100px;
+    margin-bottom: 100px
+      margin-left: 0 auto
+    margin-right: 0 auto
+    margin-top: 50px;
 }
 li {
   display: inline; /* margin creates space on the outside of an element while padding creates space on the inside */
