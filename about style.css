@@ -1,1 +1,54 @@
+body {
+  text-align: center;
+      background: url("https://images.app.goo.gl/7feBB6TNzVopdP3AA");
+      background-size: cover;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-attachment: fixed; /* Resize the background image to cover the entire container */
+      color: white;
+      font-family: helvetica;
+  }
+  h1
+{
+font-size: 70px;
+}
+input[type="submit"]
+  {
+      background: grey;
+      color: white;
+    padding: 10px;
+    }
+a
+{
+color: black;
+}
+ul
+{
+  text-align: center;
+  padding: 10px;
+  background: rgba(225, 225, 225, 0.5);
+  color: black;
+  margin: 0 auto;
+}
+li {
+  display: inline; /* margin creates space on the outside of an element while padding creates space on the inside */
+  padding: 0px 10px 0px 10px; /* top right bottom left*/
+}
+  @media (max-width: 500px) {
+    li {
+      display: block;
+      padding: 5px;
+    }
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
 
