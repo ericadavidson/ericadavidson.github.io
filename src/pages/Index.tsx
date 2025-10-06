@@ -9,7 +9,7 @@ const Index = () => {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground">
             Erica Dingman
           </h1>
-          <p className="text-xl text-muted-foreground">Professional</p>
+          <p className="text-xl text-muted-foreground">Product Marketing Leader</p>
         </div>
 
         <div className="flex flex-col gap-4 items-center pt-8">
@@ -23,9 +23,9 @@ const Index = () => {
               Portfolio
             </Button>
           </Link>
-          <Link to="/mattootd" className="w-full max-w-xs">
+          <Link to="/pottery" className="w-full max-w-xs">
             <Button variant="outline" className="w-full text-base py-6">
-              Matt's OOTD
+              Pottery
             </Button>
           </Link>
           <a

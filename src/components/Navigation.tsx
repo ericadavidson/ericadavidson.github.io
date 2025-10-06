@@ -33,13 +33,13 @@ const Navigation = () => {
               Portfolio
             </Link>
             <Link
-              to="/mattootd"
+              to="/pottery"
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
-                isActive("/mattootd") ? "text-primary" : "text-muted-foreground"
+                isActive("/pottery") ? "text-primary" : "text-muted-foreground"
               )}
             >
-              Matt's OOTD
+              Pottery
             </Link>
           </div>
         </div>

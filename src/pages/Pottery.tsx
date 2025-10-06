@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 
-const MattOOTD = () => {
+const Pottery = () => {
   const outfits = [
     {
       day: "Monday",
@@ -30,8 +30,8 @@ const MattOOTD = () => {
       
       <div className="container mx-auto px-4 pt-24 pb-12">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Matt's OOTD</h1>
-          <p className="text-muted-foreground mb-8">Resize the browser window to see the effect.</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Pottery</h1>
+          <p className="text-muted-foreground mb-8">A collection of my pottery work</p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {outfits.map((outfit) => (
@@ -52,9 +52,7 @@ const MattOOTD = () => {
 
           <div className="mt-12 max-w-3xl">
             <p className="text-sm text-muted-foreground">
-              This example uses media queries to re-arrange the images on different screen sizes: for screens larger than 1024px wide,
-              it will show four images side by side, for screens smaller than 1024px, it will show two images side by side. For screens
-              smaller than 640px, the images will stack vertically (100%).
+              My pottery collection showcasing various pieces and techniques.
             </p>
           </div>
         </div>
@@ -63,4 +61,4 @@ const MattOOTD = () => {
   );
 };
 
-export default MattOOTD;
+export default Pottery;
