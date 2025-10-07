@@ -1,15 +1,9 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import homeBg from "@/assets/home-bokeh-bg.jpg";
 
 const Index = () => {
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center px-4">
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: `url(${homeBg})` }}
-      />
-      <div className="absolute inset-0 bg-background/60" />
+    <div className="relative flex min-h-screen flex-col items-center justify-center px-4 bg-gradient-to-br from-background via-background to-muted/20">
       <div className="relative z-10 w-full max-w-2xl text-center space-y-8">
         <div className="space-y-4">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground">
