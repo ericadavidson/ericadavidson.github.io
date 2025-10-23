@@ -1,26 +1,23 @@
 import Navigation from "@/components/Navigation";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import potteryVase from "@/assets/pottery-vase.jpg";
+import potteryMug from "@/assets/pottery-mug.jpg";
 
 const Pottery = () => {
-  const outfits = [
+  const potteryItems = [
     {
-      day: "Monday",
-      image: "https://ericadavidson.github.io/img/Matt%20as%20Freddie.jpg",
-      alt: "Matt as Freddie",
+      image: potteryVase,
+      alt: "Blue and black pottery vase",
     },
     {
-      day: "Tuesday",
-      image: "https://ericadavidson.github.io/img/burgoon%20on%20brand.png",
-      alt: "Burgoon on brand",
-    },
-    {
-      day: "Wednesday",
-      image: "https://ericadavidson.github.io/img_lights.jpg",
-      alt: "Northern Lights",
-    },
-    {
-      day: "Thursday",
-      image: "https://ericadavidson.github.io/img/burgoon%20off%20brand.png",
-      alt: "Burgoon off brand",
+      image: potteryMug,
+      alt: "Blue and black pottery mug",
     },
   ];
 
@@ -33,22 +30,27 @@ const Pottery = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Pottery</h1>
           <p className="text-muted-foreground mb-8">A collection of my pottery work</p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {outfits.map((outfit) => (
-              <div key={outfit.day} className="group relative overflow-hidden rounded-lg border border-border bg-card">
-                <div className="aspect-[3/4] overflow-hidden">
-                  <img
-                    src={outfit.image}
-                    alt={outfit.alt}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-4 bg-card">
-                  <p className="text-center font-medium text-card-foreground">{outfit.day}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Carousel className="w-full max-w-4xl mx-auto">
+            <CarouselContent>
+              {potteryItems.map((item, index) => (
+                <CarouselItem key={index}>
+                  <div className="p-1">
+                    <div className="relative overflow-hidden rounded-lg border border-border bg-card">
+                      <div className="aspect-square overflow-hidden">
+                        <img
+                          src={item.image}
+                          alt={item.alt}
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
 
           <div className="mt-12 max-w-3xl">
             <p className="text-sm text-muted-foreground">
