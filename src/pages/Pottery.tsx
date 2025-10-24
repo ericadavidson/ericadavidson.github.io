@@ -1,11 +1,4 @@
 import Navigation from "@/components/Navigation";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import potteryVase from "@/assets/pottery-vase.jpg";
 import potteryMug from "@/assets/pottery-mug.jpg";
 
@@ -30,27 +23,19 @@ const Pottery = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Pottery</h1>
           <p className="text-muted-foreground mb-8">A collection of my pottery work</p>
           
-          <Carousel className="w-full max-w-4xl mx-auto">
-            <CarouselContent>
-              {potteryItems.map((item, index) => (
-                <CarouselItem key={index}>
-                  <div className="p-1">
-                    <div className="relative overflow-hidden rounded-lg border border-border bg-card">
-                      <div className="aspect-square overflow-hidden">
-                        <img
-                          src={item.image}
-                          alt={item.alt}
-                          className="h-full w-full object-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {potteryItems.map((item, index) => (
+              <div key={index} className="group relative overflow-hidden rounded-lg border border-border bg-card">
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
 
           <div className="mt-12 max-w-3xl">
             <p className="text-sm text-muted-foreground">
