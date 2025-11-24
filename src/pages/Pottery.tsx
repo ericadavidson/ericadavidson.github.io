@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import potteryVase from "@/assets/pottery-vase.jpg";
 import potteryMug from "@/assets/pottery-mug.jpg";
+import potteryCollection from "@/assets/pottery-collection.jpg";
 
 const Pottery = () => {
   const potteryItems = [
@@ -11,6 +12,10 @@ const Pottery = () => {
     {
       image: potteryMug,
       alt: "Blue and black pottery mug",
+    },
+    {
+      image: potteryCollection,
+      alt: "Collection of handcrafted pottery pieces including bowls, vase, and decorative items",
     },
   ];
 
