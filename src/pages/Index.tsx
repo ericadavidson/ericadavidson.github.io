@@ -18,9 +18,9 @@ const Index = () => {
               About Me
             </Button>
           </Link>
-          <Link to="/portfolio" className="w-full max-w-xs">
+          <Link to="/resume" className="w-full max-w-xs">
             <Button variant="outline" className="w-full text-base py-6">
-              Portfolio
+              Resume
             </Button>
           </Link>
           <Link to="/pottery" className="w-full max-w-xs">
