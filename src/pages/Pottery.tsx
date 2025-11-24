@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import potteryVase from "@/assets/pottery-vase.jpg";
 import potteryMug from "@/assets/pottery-mug.jpg";
 import potteryCollection from "@/assets/pottery-collection.jpg";
+import potterySmallVase from "@/assets/pottery-small-vase.jpg";
 
 const Pottery = () => {
   const potteryItems = [
@@ -16,6 +17,10 @@ const Pottery = () => {
     {
       image: potteryCollection,
       alt: "Collection of handcrafted pottery pieces including bowls, vase, and decorative items",
+    },
+    {
+      image: potterySmallVase,
+      alt: "Handcrafted small pottery vase with black and beige glaze",
     },
   ];
 
