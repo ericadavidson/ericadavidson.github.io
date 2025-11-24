@@ -24,13 +24,13 @@ const Navigation = () => {
               About Me
             </Link>
             <Link
-              to="/portfolio"
+              to="/resume"
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
-                isActive("/portfolio") ? "text-primary" : "text-muted-foreground"
+                isActive("/resume") ? "text-primary" : "text-muted-foreground"
               )}
             >
-              Portfolio
+              Resume
             </Link>
             <Link
               to="/pottery"
