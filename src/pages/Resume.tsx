@@ -169,19 +169,20 @@ const Resume = () => {
             {/* Featured Posts */}
             <h3 className="font-bold text-sm mb-3">Featured Posts</h3>
             <div className="space-y-3">
-              <a
-                href="https://www.linkedin.com/feed/update/urn:li:share:7398764634675007488"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block p-4 border border-border hover:border-primary transition-colors"
-              >
-                <div className="text-sm font-semibold text-foreground mb-1">
-                  View Post on LinkedIn →
-                </div>
-                <div className="text-xs text-muted-foreground">
-                  Click to view the full post and discussion
-                </div>
-              </a>
+              <div className="border border-border p-4 bg-muted/30">
+                <div className="text-xs text-muted-foreground mb-2">LinkedIn Post</div>
+                <p className="text-sm text-foreground mb-3 leading-relaxed">
+                  [Add your post content here - copy the text from your LinkedIn post]
+                </p>
+                <a
+                  href="https://www.linkedin.com/feed/update/urn:li:share:7398764634675007488"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline inline-flex items-center gap-1"
+                >
+                  View on LinkedIn →
+                </a>
+              </div>
             </div>
           </div>
         </div>
