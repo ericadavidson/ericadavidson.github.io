@@ -141,7 +141,7 @@ const Resume = () => {
           </div>
 
           {/* Education Section */}
-          <div>
+          <div className="mb-8">
             <h2 className="text-lg font-bold mb-4 text-foreground uppercase">Education</h2>
             <div className="flex justify-between items-baseline mb-1">
               <h3 className="font-bold text-base">Wesleyan University | <span className="font-normal">Middletown, CT</span></h3>
@@ -150,6 +150,36 @@ const Resume = () => {
             <p className="text-sm text-muted-foreground">
               Bachelor of Arts in Government, concentration in American Government and Public Policy
             </p>
+          </div>
+
+          {/* LinkedIn Section */}
+          <div>
+            <h2 className="text-lg font-bold mb-4 text-foreground uppercase">LinkedIn</h2>
+            <div className="mb-4">
+              <a 
+                href="https://www.linkedin.com/in/ericardavidson/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-primary hover:underline"
+              >
+                linkedin.com/in/ericardavidson
+              </a>
+            </div>
+            
+            {/* Featured Posts */}
+            <h3 className="font-bold text-sm mb-3">Featured Posts</h3>
+            <div className="space-y-4">
+              <iframe 
+                src="https://www.linkedin.com/embed/feed/update/urn:li:share:7398764634675007488?collapsed=1" 
+                height="554" 
+                width="100%" 
+                style={{ maxWidth: '504px' }}
+                frameBorder="0" 
+                allowFullScreen 
+                title="Embedded LinkedIn post"
+                className="border border-border"
+              />
+            </div>
           </div>
         </div>
       </div>
