@@ -168,17 +168,20 @@ const Resume = () => {
             
             {/* Featured Posts */}
             <h3 className="font-bold text-sm mb-3">Featured Posts</h3>
-            <div className="space-y-4">
-              <iframe 
-                src="https://www.linkedin.com/embed/feed/update/urn:li:share:7398764634675007488?collapsed=1" 
-                height="554" 
-                width="100%" 
-                style={{ maxWidth: '504px' }}
-                frameBorder="0" 
-                allowFullScreen 
-                title="Embedded LinkedIn post"
-                className="border border-border"
-              />
+            <div className="space-y-3">
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:share:7398764634675007488"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block p-4 border border-border hover:border-primary transition-colors"
+              >
+                <div className="text-sm font-semibold text-foreground mb-1">
+                  View Post on LinkedIn →
+                </div>
+                <div className="text-xs text-muted-foreground">
+                  Click to view the full post and discussion
+                </div>
+              </a>
             </div>
           </div>
         </div>
