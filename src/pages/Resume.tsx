@@ -155,35 +155,14 @@ const Resume = () => {
           {/* LinkedIn Section */}
           <div>
             <h2 className="text-lg font-bold mb-4 text-foreground uppercase">LinkedIn</h2>
-            <div className="mb-4">
-              <a 
-                href="https://www.linkedin.com/in/ericardavidson/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-sm text-primary hover:underline"
-              >
-                linkedin.com/in/ericardavidson
-              </a>
-            </div>
-            
-            {/* Featured Posts */}
-            <h3 className="font-bold text-sm mb-3">Featured Posts</h3>
-            <div className="space-y-3">
-              <div className="border border-border p-4 bg-muted/30">
-                <div className="text-xs text-muted-foreground mb-2">LinkedIn Post</div>
-                <p className="text-sm text-foreground mb-3 leading-relaxed">
-                  [Add your post content here - copy the text from your LinkedIn post]
-                </p>
-                <a
-                  href="https://www.linkedin.com/feed/update/urn:li:share:7398764634675007488"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline inline-flex items-center gap-1"
-                >
-                  View on LinkedIn →
-                </a>
-              </div>
-            </div>
+            <a 
+              href="https://www.linkedin.com/in/ericardavidson/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm text-primary hover:underline"
+            >
+              linkedin.com/in/ericardavidson
+            </a>
           </div>
         </div>
       </div>
