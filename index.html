@@ -9,19 +9,55 @@
   <meta property="og:title" content="Erica Dingman - Professional Portfolio">
   <meta property="og:description" content="Personal portfolio and professional website of Erica Dingman">
   <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="home">
-    <div class="home-content">
-      <h1>Erica Dingman</h1>
-      <p class="tagline">Product Marketing Leader</p>
+  <!-- Grain texture overlay -->
+  <div class="grain"></div>
 
-      <div class="home-buttons">
-        <a href="about.html" class="btn">About Me</a>
-        <a href="resume.html" class="btn">Resume</a>
-        <a href="pottery.html" class="btn">Pottery</a>
-        <a href="https://www.linkedin.com/in/ericardavidson/" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+  <main class="home-split">
+    <!-- Left: Portrait -->
+    <div class="portrait-panel">
+      <div class="portrait-wrap">
+        <img src="images/unnamed.jpeg" alt="Erica Dingman" class="portrait-img">
+        <div class="portrait-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Right: Content -->
+    <div class="content-panel">
+      <div class="content-inner">
+        <p class="label animate-item" style="--delay: 0.1s">Portfolio</p>
+
+        <h1 class="name animate-item" style="--delay: 0.25s">
+          <em>Erica</em><br>Dingman
+        </h1>
+
+        <p class="tagline animate-item" style="--delay: 0.4s">Product Marketing Leader</p>
+
+        <div class="divider animate-item" style="--delay: 0.5s"></div>
+
+        <nav class="home-nav">
+          <a href="about.html" class="nav-link animate-item" style="--delay: 0.6s">
+            <span class="nav-text">About Me</span>
+            <span class="nav-arrow">&#8594;</span>
+          </a>
+          <a href="resume.html" class="nav-link animate-item" style="--delay: 0.72s">
+            <span class="nav-text">Resume</span>
+            <span class="nav-arrow">&#8594;</span>
+          </a>
+          <a href="pottery.html" class="nav-link animate-item" style="--delay: 0.84s">
+            <span class="nav-text">Pottery</span>
+            <span class="nav-arrow">&#8594;</span>
+          </a>
+          <a href="https://www.linkedin.com/in/ericardavidson/" target="_blank" rel="noopener noreferrer" class="nav-link animate-item" style="--delay: 0.96s">
+            <span class="nav-text">LinkedIn</span>
+            <span class="nav-arrow">&#8594;</span>
+          </a>
+        </nav>
       </div>
     </div>
   </main>
